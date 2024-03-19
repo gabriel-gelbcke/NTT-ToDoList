@@ -1,0 +1,92 @@
+.top{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #18a484;
+    border-radius: 15px 15px 0px 0px;
+    color: white;
+    
+}
+
+form {
+    padding-right: calc(var(--bs-gutter-x)* 1.5);
+    padding-left: calc(var(--bs-gutter-x)* 1.5);
+}
+
+#submitButton{
+    margin-top: 20px;
+}
+
+#myCheckbox{
+    margin-left: 15px;
+}
+
+#trash{
+    margin-left: 8px;
+}
+
+.th1{
+    width: 50%;
+    border-radius: 15px 0px 0px 0px;
+}
+
+.th2{
+    width: 25%;
+}
+
+.th3{
+    width: 25%;
+    border-radius: 0px 15px 0px 0px;
+}
+
+.tf1{
+    width: 50%;
+    height: 0px;
+    border-radius: 0px 0px 0px 15px;
+    border-bottom-width: 0px;
+}
+
+.tf2{
+    width: 25%;
+    border-bottom-width: 0px;
+}
+
+.tf3{
+    width: 25%;
+    border-radius: 0px 0px 15px 0px;
+    border-bottom-width: 0px;
+}
+
+.outTable{
+    padding-right: calc(var(--bs-gutter-x)* 1.5);
+    padding-left: calc(var(--bs-gutter-x)* 1.5);
+}
+
+.name{
+    margin: 2px;
+    margin-left: 1px;
+}
+
+.container2{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    max-width: 720px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    --bs-gutter-x: 1.5rem;
+    background-color: white;
+    position: relative; /* added */
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 14px 14px 8px 1px rgb(0 0 0 / 0.3);
+}
+
+.all{
+    width: 100%;
+    display: flex;
+    background-color: #20bc9c;
+    height: 100%;
+    position: relative;
+}

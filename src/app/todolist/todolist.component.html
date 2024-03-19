@@ -1,0 +1,56 @@
+<div class="all">  
+  <div class="container2">
+
+    <h1 class="top">To-Do List</h1>
+
+
+
+    <form (ngSubmit)="onSubmit(taskForm)" #taskForm="ngForm">
+
+      <div class="form-group">
+
+        <label for="task"></label>
+
+        <input type="text" class="form-control" id="text"  placeholder="Insira sua tarefa" ngModel name="task" required>
+
+        <small *ngIf="taskForm.invalid && taskForm.dirty" id="errorMessage" class="form-text text-danger">Não se pode adicionar tarefas vazias!</small>
+
+      </div>
+
+      <button [disabled]="taskForm.invalid" id="submitButton" type="submit" class="btn btn-primary">Adicionar Tarefa</button>
+
+    </form>
+
+    <hr>
+
+    <div class="outTable">
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th class="th1" scope="col">Tarefa</th>
+            <th class="th2" scope="col">Status</th>
+            <th class="th3" scope="col">Deletar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let t of taskArray; index as i">
+            <td><div class="name">{{t.taskName}}</div></td>
+            <td><div class="name"><input (change)="onCheck(i)" id="myCheckbox" type="checkbox" aria-label="Checkbox for following text input"></div></td>
+            <td><div class="name"><button id="trash" style="font-size:24px" class="btn btn-danger btn-sm fa fa-trash-o" (click)="onDelete(i)"></button></div></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th class="tf1" scope="col">&#10240;</th>
+            <th class="tf2" scope="col">&#10240;</th>
+            <th class="tf3" scope="col">&#10240;</th>
+          </tr>
+        </tfoot>
+      </table>
+
+    </div>
+
+      
+    </div>
+</div>
